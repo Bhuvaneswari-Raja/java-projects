@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class Catalog {
+	
+    private HashMap<String, String[]> items;
+    private Bookshelf books;
+     
+    
+    public Catalog() {
+        
+    }
+
+    public void addItem(String title, String[] bookInfo) {
+    	books.add(title, bookInfo);
+    }
+
+    public void removeItem(String item) {
+    	books.remove(item);
+    }
+
+      
+    public void getItem(String itemName) {
+    	
+    }
+    
+    public void returnItem(String itemName) {
+    	
+    }
+    
+   
+       
+}
+
+

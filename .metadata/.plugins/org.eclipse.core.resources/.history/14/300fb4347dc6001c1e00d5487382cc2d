@@ -1,0 +1,24 @@
+//import java.util.ArrayList;
+public class MultipleChoice {
+	public static void main(String[] args) {
+		
+		String[] memberNames = {"James","Lily","Sirius","Marlene","Regulus","Remus","Peter"};
+		
+		ClubMembers members = new ClubMembers();
+		members.addMembers(memberNames, 2020);
+		
+	
+		
+	}
+	
+	public static boolean mystery(int[] values) {
+		for(int i = 0; i < values.length-1; i++) {
+			if(Math.abs(values[i]-values[i+1]) > 15) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	
+}

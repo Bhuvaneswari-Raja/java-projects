@@ -1,0 +1,47 @@
+import java.util.LinkedHashMap;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+
+public class LoginInfo {
+	
+	LinkedHashMap<String, String> login = new LinkedHashMap<String, String>();
+	
+	
+	public void getLogin(String userNew, String passwordNew) {
+		login.put("kate", "london123");
+		login.put(userNew, passwordNew);
+	}
+
+	
+	public LinkedHashMap setLogin() {
+		login.put("Raja", "king123");
+		login.put("Kala", "queen123");
+		login.put("Pooja", "college123");
+		login.put("Nandhini", "school123");
+		return login;
+	}
+
+	
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		ArrayList<String> testList = new ArrayList<String>();
+		
+		System.out.println("Enter a name: ");
+		String name = scan.next();
+		
+		while(name != "done") {
+			testList.add(name);
+			System.out.println("Enter a name: ");
+			name = scan.next();
+		}
+		
+		for(String name: testList) {
+			System.out.println(name);
+		}
+	}
+
+	
+	
+}

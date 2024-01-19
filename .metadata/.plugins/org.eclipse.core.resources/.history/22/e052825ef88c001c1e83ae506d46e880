@@ -1,0 +1,18 @@
+package com.pooja;
+
+public class Practice {
+	
+	public static void main(String args[]) {
+		System.out.println("Testing main method");
+		main();
+		
+	}
+	
+	public static void main() {
+		System.out.println("Pooja is awesome!");
+	}
+
+		
+
+
+}

@@ -1,0 +1,48 @@
+import java.util.List;
+
+public class Librarian {
+	
+	private Catalog catalog;
+    private List<Member> members;
+
+    public Librarian() {
+        
+    }
+
+    public void addItem(String itemName, String[] bookInfo) {
+        //catalog.addItem(itemName, bookInfo);
+    }
+
+    public void removeItem(String item) {
+        catalog.removeItem(item);
+    }
+    
+    public void getItem(String itemName) {
+    	catalog.getItem(itemName);
+    }
+    
+    public void returnItem(String itemName, String[] bookInfo) {
+    	catalog.returnItem(itemName, bookInfo);
+    }   
+    
+    
+    public void addMember(Member member) {
+		members.add(member);
+    }
+
+    public boolean getMembers(Member username) {
+    	if(members.contains(username)) {
+    		return true;
+    	}
+    	else {
+    		return false; 
+    	}
+		
+    	
+    }
+    
+    
+    
+    
+  
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Everything&apos; to &apos;MyEverything&apos;&#x0D;&#x0A;- Original project: &apos;ScratchPaper&apos;&#x0D;&#x0A;- Original element: &apos;Everything&apos;&#x0D;&#x0A;- Renamed element: &apos;MyEverything&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Everything&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Everything.java[Everything" matchStrategy="1" name="MyEverything" qualified="false" references="true" similarDeclarations="false" stamp="1652576212477" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+public class MultipleChoice {
+	public static void main(String[] args) {
+		/*
+		ArrayList<String> subjects = new ArrayList<String>();
+		subjects.add("Computer Science");
+		subjects.add("Math");
+		subjects.add("English");
+		subjects.add("History");
+		subjects.add("Band");
+		subjects.add("Theater");	
+		subjects.add("Chemistry");
+		
+		int count = 0;
+		for(String letter : subjects) {
+			if (letter.indexOf("e") >= 0) {
+				count++;
+			}
+			
+		}
+		System.out.println(count);
+		
+		*/
+		
+		int[] num = {50,40,30,20,10};
+		boolean b = mystery(num);
+		System.out.println(b);
+
+	}
+	
+	public static boolean mystery(int[] values) {
+		for(int i = 0; i < values.length-1; i++) {
+			if(Math.abs(values[i]-values[i+1]) > 15) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	
+}

@@ -1,0 +1,27 @@
+package com.pooja;
+
+import java.util.Scanner;
+
+public class HelloWorld {
+	public static void main(String arg[]) {
+		System.out.println("Hello");
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter 1 or 2: ");
+		int num = scan.nextInt();
+		
+		System.out.println(methodOne());
+		System.out.println(methodTwo());
+
+		
+	}
+	
+	public static String methodOne() {
+		return "methodOne";
+	}
+	
+	public static String methodTwo() {
+		return "methodTwo";
+	}
+
+}

@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Catalog {
+    private List<String> items;
+    private List<String> members;
+
+    public Catalog() {
+        this.items = new ArrayList<>();
+        this.members = new ArrayList<>();
+    }
+
+    public void addItem(String item) {
+        items.add(item);
+    }
+
+    public void removeItem(String item) {
+        items.remove(item);
+    }
+
+    public void addMember(String member) {
+        members.add(member);
+    }
+
+    public void removeMember(String member) {
+        members.remove(member);
+    }
+    
+    public List<String> search(String keyword) {
+        List<String> results = new ArrayList<>();
+        for (String item : items) {
+            if (items.contains(keyword)) {
+                results.add(item);
+            }
+        }
+        return results;
+    }
+
+    public List<String> getItems() {
+        return items;
+    }
+
+    public List<String> getMembers() {
+        return members;
+    }
+       
+}
+
+

@@ -1,0 +1,15 @@
+
+import java.util.ArrayList;
+public class UnoDeck {
+	
+	ArrayList<Integer> red = new ArrayList<Integer>();
+	ArrayList<Integer> blue = new ArrayList<Integer>();
+	ArrayList<Integer> gree = new ArrayList<Integer>();
+	ArrayList<Integer> yellow = new ArrayList<Integer>();
+	
+	red.add(0);
+	sysout
+
+	
+	
+}

@@ -1,0 +1,52 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ArrayList;
+
+public class Bookshelf {
+	
+	private Map<String, String> authors = new HashMap<>();
+	private Map<Integer, String> allBooks = new HashMap<>();
+	
+	
+	
+	public Bookshelf() {
+		setItems();
+	}
+	
+	 
+	public void setItems() {
+		int rand = (int) (Math.random() * (90000 - 10000) + 10000);
+    	String textId = "";
+    	for(int i = 0; i < 10; i++) {
+    		rand = (int) ((10 - 0 + 1) + 0);
+    		textId = textId + String.valueOf(rand);
+    	}
+    	
+		allBooks.put("Fangirl", new String[] {"Rainbow Rowell", textId});
+	}
+	
+	public void addItem(String title, String[] info) {
+		allBooks.put(title, info);
+	}
+	
+	public void removeItem(String title) {
+		allBooks.remove(title);
+	}
+	
+	
+	public void searchItem(String itemName) {
+		if(allBooks.containsKey(itemName)) {
+			String[] tempItem = allBooks.remove(itemName);
+		}
+	}
+	
+	public String[] returnItem() {
+		return tempList;
+		
+	}
+	
+	
+	
+	
+	 
+}

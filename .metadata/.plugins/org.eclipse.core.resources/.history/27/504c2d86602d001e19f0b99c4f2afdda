@@ -1,0 +1,59 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class Catalog {
+	
+    private Map<Integer, String> items = new HashMap<>();
+    private Bookshelf books;
+    private List<String[]> tempList = new ArrayList<>();
+     
+    
+    public Catalog() {
+        books = new Bookshelf();
+    }
+
+    public void addItem(String title, String author) {
+    	books.addItem(title, author);
+    }
+
+    public void removeItem(String title) {
+    	books.removeItem(title);
+    }
+
+      
+    public void getItem(String title) {
+    	if(items.containsKey(title)) {
+    		String[] bookTitles = items.values().toArray(new String[0]);
+    		//Object[] temp = items.entrySet().toArray();
+    		tempList.add(temp);
+    	}
+    	
+    }
+    
+    public void returnItem(int id, String title) {
+ 
+    	items.put(id, title);
+    }
+    
+    /*
+    public static void main(String[] args) {
+    	
+    	Catalog cat = new Catalog();
+    	
+    	String[] arr = {"Rowling", "00000"};
+    	
+    	cat.addItem("Harry Potter", arr);
+    	
+    	System.out.println();
+    	
+    } 
+    */
+    
+   
+       
+}
+
+

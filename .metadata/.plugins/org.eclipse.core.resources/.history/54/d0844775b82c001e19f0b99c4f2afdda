@@ -1,0 +1,59 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Librarian {
+	
+	private Catalog catalog;
+    private List<Member> members;
+
+    public Librarian() {
+        
+    }
+
+    public void addItem(String title, String author) {
+        catalog.addItem(title, author);
+    }
+
+    public void removeItem(String item) {
+        catalog.removeItem(item);
+    }
+    
+    public void getItem(String itemName) {
+    	catalog.getItem(itemName);
+    }
+    
+    public void returnItem(ArrayList<String []> listOfBooks) {
+    	//catalog.returnItem(itemName, bookInfo);
+    	
+    	for(int i = 0; i < listOfBooks.size(); i++) {
+    		
+    		for(int j = 0; j < listOfBooks.get(i).length; j++) {
+    			String[] temp = listOfBooks.get(i);
+    			int tempId = temp[0]
+    			catalog.returnItem(temp[0], temp[1]);
+    		}
+    		
+    	}
+    }   
+    
+    
+    public void addMember(Member member) {
+		members.add(member);
+    }
+
+    public boolean getMembers(Member username) {
+    	if(members.contains(username)) {
+    		return true;
+    	}
+    	else {
+    		return false; 
+    	}
+		
+    	
+    }
+    
+    
+    
+    
+  
+}

@@ -1,0 +1,40 @@
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Bookshelf {
+	
+	private HashMap<String, List<String>> allBooks;
+	private HashMap<String, String> tempList;
+	
+	
+	
+	public Bookshelf() {
+		setItems();
+	}
+	
+	 
+	public void setItems() {
+		int rand = (int) ((9 - 0 + 1) + 0);
+    	String textId = "";
+    	for(int i = 0; i < 10; i++) {
+    		rand = (int) ((10 - 0 + 1) + 0);
+    		textId = textId + String.valueOf(rand);
+    	}
+		allBooks.put("Fangirl", Arrays.asList("Rainbow Rowell", textId));
+	}
+	
+	
+	public void searchItem(String itemName) {
+		
+	}
+	
+	public HashMap returnItem() {
+		return tempList;
+		
+	}
+	
+	
+	
+	 
+}

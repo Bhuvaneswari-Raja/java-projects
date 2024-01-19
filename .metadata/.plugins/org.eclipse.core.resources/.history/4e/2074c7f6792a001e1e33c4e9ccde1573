@@ -1,0 +1,19 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class TestBook {
+	
+	public static void main(String[] args) {
+		
+		
+		Map<String, String> books = new HashMap<>();
+		
+		books.put("HarryPotter1", "Rowling");
+		
+		
+		
+		
+		
+	}
+
+}

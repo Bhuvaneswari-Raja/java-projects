@@ -1,0 +1,78 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+public class TestBook {
+	
+	static Map<String, String> bookAndAuthor = new HashMap<>();	
+	static Map<String, String> bookDetails = new HashMap<>();
+	public static void main(String[] args) {
+		
+		/*
+		Object[] test = {458, "String", true, 89.3};
+		
+		for(int x = 0; x < test.length; x++) {
+			System.out.println(test[x]);
+		}
+		
+		/*
+		
+		TestBook testBook = new TestBook();
+		testBook.addBooks();
+
+		testBook.listBooks("HarryPotter1");
+		*/
+		
+		Map<Integer, String> testMap = new HashMap<>();
+		
+		testMap.put(45, "Pooja");
+		testMap.put(89, "Nandhini");
+		testMap.put(69, "Sirius");
+		String[] arr = null;
+		testMap.values().toArray(arr);
+		
+		for(int x = 0; x < arr.length; x++) {
+			System.out.println(arr[x]);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	public static void addBooks() {
+			
+		bookAndAuthor.put("HarryPotter1", "Rowling");
+		System.out.println(bookAndAuthor);
+		
+		
+		bookDetails.put("Id1", "HarryPotter1");
+		bookDetails.put("Id2", "HarryPotter1");
+		
+		System.out.println(bookDetails);
+	}
+	
+	
+	public static void listBooks(String bookName) {
+		
+		String authorDetail=null;
+		for(Map.Entry<String, String> entry : bookAndAuthor.entrySet()) {
+			if (entry.getKey().equals(bookName)) {
+				authorDetail = entry.getValue();
+			}
+			
+		}
+		
+		System.out.println(authorDetail);
+		
+	}
+	
+
+}

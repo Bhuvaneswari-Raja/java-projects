@@ -1,0 +1,44 @@
+
+import java.util.ArrayList;
+public class UnoDeck {
+	
+	ArrayList<Integer> red = new ArrayList<Integer>();
+	ArrayList<Integer> blue = new ArrayList<Integer>();
+	ArrayList<Integer> gree = new ArrayList<Integer>();
+	ArrayList<Integer> yellow = new ArrayList<Integer>();
+	
+	public UnoDeck() {
+		red.add(0);
+		red.add(1);
+		red.add(1);
+		red.add(2);
+		red.add(2);
+		red.add(3);
+		red.add(3);
+		red.add(4);
+		red.add(4);
+		red.add(5);
+		red.add(5);
+		red.add(6);
+		red.add(6);
+		red.add(7);
+		red.add(7);
+		red.add(8);
+		red.add(8);
+		red.add(9);
+		red.add(9);
+
+	}
+	
+	public void unoReturn() {
+		System.out.println(red);
+	}
+	
+	public static void main(String[] args) {
+		new UnoDeck();
+		
+	}
+
+	
+	
+}

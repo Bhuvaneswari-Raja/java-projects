@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+public class Pooja{
+
+	
+	public void setTask(String task) {
+
+	}
+
+	
+	public ArrayList<String> getTask() {
+		return null;
+	}
+
+}

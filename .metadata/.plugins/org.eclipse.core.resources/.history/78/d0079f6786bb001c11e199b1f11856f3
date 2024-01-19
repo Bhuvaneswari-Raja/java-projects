@@ -1,0 +1,55 @@
+import java.util.Scanner;
+public class HideAndSeek {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter favourite city: ");
+		String city = scan.next();
+		
+			
+		try 
+		{
+			//code to monitor for errors
+		}
+		catch
+		{
+			//hander for Exception
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
+		System.out.print("Enter number: ");
+		
+		try {
+			int randomNumber = scan.nextInt();
+			System.out.println(randomNumber);
+		} 
+		catch(Exception wrong) {
+			System.out.println("Pls, Enter a number");
+		}
+		
+		 
+		String[] peters = new String[3];
+		peters[0] = "Tobey";
+		peters[1] = "Andrew";
+		peters[2] = "Tom";
+
+		try {
+			System.out.println(peters[1]);	
+		} catch(Exception error) {
+			System.out.println(peters[2]);
+		}
+		*/
+		
+	}
+}

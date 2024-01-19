@@ -1,0 +1,36 @@
+package com.pooja;
+
+import java.util.Scanner;
+
+public class HelloWorld {
+	public static void main(String arg[]) {
+		System.out.println("Hello");
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter 1 or 2: ");
+		int num = scan.nextInt();
+		
+		if(num == 1) {
+			System.out.println(methodOne());
+		}
+		if(num == 2) {
+		  System.out.println(methodTwo());
+		}
+		
+		do {
+			System.out.print("Enter 1 or 2: ");
+			num = scan.nextInt();
+		}while(num != 1 || num != 2);
+		
+		
+	}
+	
+	public static String methodOne() {
+		return "methodOne";
+	}
+	
+	public static String methodTwo() {
+		return "methodTwo";
+	}
+
+}

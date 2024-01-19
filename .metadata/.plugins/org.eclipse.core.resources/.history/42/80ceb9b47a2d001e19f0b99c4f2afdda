@@ -1,0 +1,84 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class TestBook {
+	
+	static Map<String, String> bookAndAuthor = new HashMap<>();	
+	static Map<Integer, String> bookDetails = new HashMap<>();
+	public static void main(String[] args) {	
+		
+		Map<Integer, String> testMap = new HashMap<>();
+		testMap.put(40, "Fangirl");
+		testMap.put(50, "Fangirl");
+		testMap.put(60, "Fangirl");
+		testMap.put(70, "ChainOfGold");
+		testMap.put(60, "HarryPotter");
+		testMap.put(60, "PrecyJackson");
+		
+		Iterator<Entry<Integer, String>> iterate = testMap.entrySet().iterator();
+		
+		/*
+		testMap.put(10, "Fangirl");
+		testMap.put(20, "Fangirl");
+		testMap.put(30, "Fangirl"); 
+		*/
+		
+		System.out.println("----- Before -----");
+		
+		System.out.println(testMap);
+		
+	//	Iterator<Entry<Integer, String>> iterate = testMap.entrySet().iterator();
+
+
+		while(iterate.hasNext()) {
+			//System.out.println(value);
+			Map.Entry<Integer, String> oneCopy = iterate.next();
+			System.out.println("----- After -----");
+			System.out.println(oneCopy.getKey() + " = " + oneCopy.getValue());
+			
+			if(oneCopy.getValue() == "Fangirl") {
+				testMap.remove(oneCopy.getKey());
+				break;
+			}
+		}
+		
+		
+		System.out.println(testMap);
+
+		
+				
+	}
+	
+	/*
+	
+	public static void addBooks() {
+			
+		bookAndAuthor.put("HarryPotter1", "Rowling");
+		System.out.println(bookAndAuthor);
+		
+		
+		bookDetails.put("Id1", "HarryPotter1");
+		bookDetails.put("Id2", "HarryPotter1");
+		
+		System.out.println(bookDetails);
+	}
+	
+	
+	public static void listBooks(String bookName) {
+		
+		String authorDetail=null;
+		for(Map.Entry<String, String> entry : bookAndAuthor.entrySet()) {
+			if (entry.getKey().equals(bookName)) {
+				authorDetail = entry.getValue();
+			}
+			
+		}
+		
+		System.out.println(authorDetail);
+		
+	} */
+	
+
+}

@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Pooja implements Account {
+
+	@Override
+	public void setTask(String task) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public ArrayList<String> getTask() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		Library library = new Library();
+		
+
+		System.out.println("---------- Welcome to the Library ----------");
+		System.out.println("1 - Become a Member");
+		System.out.println("2 - Checkout a book");
+		System.out.println("3 - Return a book");
+		System.out.println("4 - Make a Reservation");
+		System.out.println("5 - Get book due date");
+		System.out.println("6 - Add book the Catalog");
+		int userChoice = scan.nextInt();
+		
+		if(userChoice == 1) {
+			System.out.println("6 - Add book the Catalog");
+			int randomID = (int) ((1000 - 1 + 1) * Math.random() + 1);
+			Member newMember = new Member(randomID, null, null, null);
+		} else if (userChoice == 2) {
+			
+		} else if (userChoice == 3) {
+			
+		} else if (userChoice == 4) {
+			
+		} else if (userChoice == 5) {
+			
+		} else if (userChoice == 6) {
+			 
+		} 
+		else {
+			
+		}
+		
+		
+  }
+}

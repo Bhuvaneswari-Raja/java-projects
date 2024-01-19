@@ -1,0 +1,26 @@
+public class Librarian extends Member {
+	
+	private Catalog catalog;
+	
+    public Librarian(int id, String name, String phone) {
+        super(id, name, phone);
+    }
+
+    public void addItem(String item) {
+        catalog.addItem(item);
+    }
+
+    public void removeItem(String item) {
+        catalog.removeItem(item);
+    }
+
+    public void addMember(Member member) {
+        catalog.addMember(member);
+    }
+
+    public void removeMember(Member member) {
+        catalog.removeMember(member);
+    }
+    
+  
+}

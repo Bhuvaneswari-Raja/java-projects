@@ -1,0 +1,40 @@
+//import java.util.ArrayList;
+public class MultipleChoice {
+	public static void main(String[] args) {
+		
+		for(int outer = 0; outer < 5; outer++) {
+				System.out.println("*");
+			for(int inner = 0; inner < outer; inner++) {
+				System.out.print("*");
+			}
+			
+		}
+		
+		
+		
+	}
+	
+	
+	
+	public static boolean mystery(int[] values) {
+		
+		for(int i = 0; i < values.length-1; i++) {
+			if(Math.abs(values[i]-values[i+1]) > 15) {
+				return false;
+			}
+		}
+		return true;
+	}
+		
+	public static void memberClass() {
+		/*
+		String[] memberNames = {"James","Lily","Sirius","Regulus","Remus","Peter"};
+		ClubMembers members = new ClubMembers();
+		members.addMembers(memberNames, 2023);
+		members.removeMembers(2020);
+		*/
+	
+	}
+	
+	
+}

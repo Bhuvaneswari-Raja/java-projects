@@ -1,0 +1,30 @@
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+public class Item {
+	
+	private LinkedHashMap<Integer, String> firstList;
+	private LinkedHashMap<String, STring> secondList;
+	
+	
+	public Item () {
+		setItems();
+	}
+	
+	
+	public void setItems() {
+		fullList.put(0, "");
+	}
+	
+	public void returnItem(HashMap returns) {
+		/*
+		for(int i = 0; i < returns.size(); i++) {
+			fullList.put(returns.get(i));
+		}
+		*/
+	}
+	
+	
+	
+	public 
+}
